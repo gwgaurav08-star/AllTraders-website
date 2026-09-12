@@ -1,0 +1,2695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ALL TRADERS | Engineering • Supply • Services</title>
+
+<meta name="description"
+content="ALL TRADERS provides civil construction, electrical, plumbing, water treatment, water supply and furniture solutions.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root {
+    --navy: #061b2d;
+    --dark: #031522;
+    --blue: #087fd1;
+    --light-blue: #55c7ff;
+    --white: #ffffff;
+    --bg: #f4f8fb;
+    --text: #102334;
+    --muted: #617386;
+    --border: #dfe8ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+section {
+    scroll-margin-top: 82px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+    height: 82px;
+    padding: 0 5%;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 999;
+
+    border-bottom: 1px solid #e5edf3;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+.logo small {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 7px;
+    letter-spacing: 2px;
+    color: #718294;
+    margin-top: -4px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #526578;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--blue);
+}
+
+.menu-button {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.container {
+    width: 84%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 100px 8%;
+}
+
+.eyebrow {
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.center {
+    text-align: center;
+}
+
+.section-heading {
+    max-width: 800px;
+    margin: 0 auto 55px;
+}
+
+.section-heading h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(32px, 4vw, 50px);
+    line-height: 1.15;
+}
+
+.section-heading p:last-child {
+    color: var(--muted);
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--blue);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0567aa;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid #8baec6;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--navy);
+}
+
+
+/* =========================================================
+   HOME HERO
+========================================================= */
+
+.hero {
+    min-height: 760px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 8% 80px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2200&q=90");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3,20,34,0.98),
+            rgba(3,29,49,0.82),
+            rgba(3,29,49,0.25)
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+
+    color: white;
+}
+
+.hero .eyebrow {
+    color: var(--light-blue);
+}
+
+.hero h1 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: clamp(48px, 7vw, 88px);
+
+    line-height: 1.02;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: var(--light-blue);
+}
+
+.hero-description {
+    max-width: 700px;
+
+    font-size: 18px;
+
+    color: #d8e5ef;
+
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hero-badge {
+    position: absolute;
+
+    right: 7%;
+    bottom: 55px;
+
+    z-index: 3;
+
+    padding: 18px 23px;
+
+    background: rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    border-radius: 8px;
+
+    color: white;
+}
+
+.hero-badge strong {
+    display: block;
+}
+
+.hero-badge span {
+    display: block;
+
+    font-size: 11px;
+
+    color: #cbdbe7;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    background: white;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.stat {
+    text-align: center;
+
+    padding: 30px;
+
+    border-right: 1px solid var(--border);
+}
+
+.stat strong {
+    display: block;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 31px;
+
+    color: var(--blue);
+}
+
+.stat span {
+    color: var(--muted);
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    background: white;
+}
+
+.about-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.about-card {
+    padding: 35px;
+
+    border-radius: 12px;
+
+    border: 1px solid var(--border);
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #edf5fa
+        );
+
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 45px rgba(5,40,70,0.1);
+}
+
+.about-icon {
+    font-size: 35px;
+
+    color: var(--blue);
+}
+
+.about-card h3 {
+    font-family: "Montserrat", sans-serif;
+
+    margin: 15px 0 10px;
+}
+
+.about-card p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services {
+    background: var(--bg);
+}
+
+.service-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    border: 1px solid var(--border);
+
+    cursor: pointer;
+
+    transition: 0.35s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #a5d8f6;
+
+    box-shadow:
+        0 20px 45px rgba(10,40,65,0.1);
+}
+
+.service-number {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    color: #8092a3;
+}
+
+.service-icon {
+    font-size: 42px;
+
+    margin: 18px 0;
+}
+
+.service-card h3 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+.service-link {
+    display: block;
+
+    margin-top: 20px;
+
+    color: var(--blue);
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   SERVICE PAGES
+========================================================= */
+
+.page {
+    display: none;
+
+    padding-top: 82px;
+
+    min-height: 100vh;
+}
+
+.page.active-page {
+    display: block;
+}
+
+.page-hero {
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            100deg,
+            #05243b,
+            #0879ad
+        );
+}
+
+.page-hero.water {
+    background:
+        linear-gradient(
+            100deg,
+            #06344b,
+            #0797b5
+        );
+}
+
+.page-hero.plumbing {
+    background:
+        linear-gradient(
+            100deg,
+            #062a43,
+            #0585aa
+        );
+}
+
+.page-hero.furniture {
+    background:
+        linear-gradient(
+            100deg,
+            #172c3e,
+            #637887
+        );
+}
+
+.page-hero .eyebrow {
+    color: var(--light-blue);
+}
+
+.page-hero h1 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: clamp(45px,6vw,72px);
+
+    line-height: 1.05;
+
+    margin-bottom: 15px;
+}
+
+.page-hero-description {
+    max-width: 720px;
+
+    color: #dceaf3;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.feature-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 20px;
+}
+
+.feature {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    padding: 35px;
+
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0,40,80,0.08);
+}
+
+.feature-number {
+    color: var(--blue);
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.feature h3 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 22px;
+
+    margin: 10px 0;
+}
+
+.feature p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SERVICE CTA
+========================================================= */
+
+.service-cta {
+    max-width: 1100px;
+
+    margin: 60px auto 0;
+
+    padding: 45px;
+
+    border-radius: 12px;
+
+    background: var(--navy);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.service-cta h2 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 30px;
+}
+
+
+/* =========================================================
+   PROJECT CTA
+========================================================= */
+
+.project-cta {
+    padding: 75px 8%;
+
+    background: var(--navy);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.project-cta h2 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 36px;
+
+    max-width: 750px;
+}
+
+.project-cta .eyebrow {
+    color: var(--light-blue);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+}
+
+.contact-info h2 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 40px;
+
+    line-height: 1.15;
+}
+
+.contact-info-description {
+    color: var(--muted);
+
+    margin: 20px 0 30px;
+}
+
+.contact-item {
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.contact-item small {
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    color: #8293a3;
+}
+
+.contact-item a {
+    color: var(--blue);
+
+    font-weight: 700;
+}
+
+.contact-form {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        0 18px 45px rgba(10,40,65,0.07);
+}
+
+.contact-form h3 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 28px;
+
+    margin-bottom: 22px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 14px;
+
+    border: 1px solid #d4dfe8;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--blue);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: var(--dark);
+
+    color: #b9cad6;
+
+    padding: 60px 8% 20px;
+}
+
+.footer-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-grid h2,
+.footer-grid h3 {
+    color: white;
+
+    margin-bottom: 15px;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-grid p,
+.footer-grid a {
+    font-size: 13px;
+}
+
+.footer-grid a {
+    display: block;
+
+    margin: 7px 0;
+}
+
+.footer-grid a:hover {
+    color: var(--light-blue);
+}
+
+.copyright {
+    text-align: center;
+
+    border-top: 1px solid #173043;
+
+    margin-top: 45px;
+
+    padding-top: 18px;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:1050px) {
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 82px;
+
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        box-shadow:
+            0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:700px) {
+
+    .hero {
+        min-height: 680px;
+
+        padding: 100px 7% 70px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-badge {
+        display: none;
+    }
+
+    .stats-bar {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .stat {
+        padding: 22px;
+    }
+
+    .section {
+        padding: 70px 6%;
+    }
+
+    .service-grid,
+    .feature-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-cta,
+    .service-cta {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .project-cta h2 {
+        font-size: 30px;
+    }
+
+    .contact-info h2 {
+        font-size: 33px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <a href="#" class="logo" onclick="showPage('home'); return false;">
+        <span>ALL</span> TRADERS
+        <small>ENGINEERING • SUPPLY • SERVICES</small>
+    </a>
+
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+
+        <a href="#" onclick="showPage('home'); return false;">
+            Home
+        </a>
+
+        <a href="#" onclick="showPage('civil'); return false;">
+            Civil
+        </a>
+
+        <a href="#" onclick="showPage('electrical'); return false;">
+            Electrical
+        </a>
+
+        <a href="#" onclick="showPage('water-treatment'); return false;">
+            Water Treatment
+        </a>
+
+        <a href="#" onclick="showPage('water-supply'); return false;">
+            Water Supply
+        </a>
+
+        <a href="#" onclick="showPage('furniture'); return false;">
+            Furniture
+        </a>
+
+        <a href="#" onclick="showPage('plumbing'); return false;">
+            Plumbing
+        </a>
+
+        <a href="#" onclick="showPage('contact'); return false;">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HOME PAGE
+===================================================== -->
+
+<main id="home" class="page active-page">
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            ENGINEERING • CONSTRUCTION • SUPPLY
+        </p>
+
+        <h1>
+            Building Better.
+            <br>
+            <span>Supplying Smarter.</span>
+        </h1>
+
+        <p class="hero-description">
+            Integrated civil, electrical, plumbing, water treatment,
+            water supply and furniture solutions for domestic,
+            commercial, industrial and institutional projects.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#" class="btn btn-primary"
+               onclick="showPage('contact'); return false;">
+                Start a Project
+            </a>
+
+            <a href="#services" class="btn btn-outline">
+                Explore Services
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-badge">
+
+        <strong>ALL TRADERS</strong>
+
+        <span>
+            Engineering • Supply • Services
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- STATISTICS -->
+
+<section class="stats-bar">
+
+    <div class="stat">
+        <strong>7+</strong>
+        <span>Core Services</span>
+    </div>
+
+    <div class="stat">
+        <strong>24/7</strong>
+        <span>Support</span>
+    </div>
+
+    <div class="stat">
+        <strong>360°</strong>
+        <span>Project Approach</span>
+    </div>
+
+    <div class="stat">
+        <strong>1</strong>
+        <span>Reliable Partner</span>
+    </div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section class="section about">
+
+    <div class="section-heading center">
+
+        <p class="eyebrow">
+            WHY ALL TRADERS
+        </p>
+
+        <h2>
+            One partner for your infrastructure needs.
+        </h2>
+
+        <p>
+            From construction materials and electrical work
+            to specialized water systems and professional
+            plumbing, we provide practical solutions under
+            one roof.
+        </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-card">
+
+            <div class="about-icon">◈</div>
+
+            <h3>
+                Integrated Project Support
+            </h3>
+
+            <p>
+                Professional supply and technical service
+                for projects that require dependable
+                coordination.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">✓</div>
+
+            <h3>
+                Service Focused
+            </h3>
+
+            <p>
+                Clear communication, responsive support
+                and solutions tailored to project
+                requirements.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">⌁</div>
+
+            <h3>
+                Multiple Sectors
+            </h3>
+
+            <p>
+                Solutions for domestic, commercial,
+                industrial and institutional applications.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section class="section services" id="services">
+
+    <div class="section-heading center">
+
+        <p class="eyebrow">
+            OUR EXPERTISE
+        </p>
+
+        <h2>
+            Solutions engineered around your needs.
+        </h2>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <!-- CIVIL -->
+
+        <div class="service-card"
+             onclick="showPage('civil')">
+
+            <span class="service-number">01</span>
+
+            <div class="service-icon">
+                🏗️
+            </div>
+
+            <h3>
+                Civil Construction
+            </h3>
+
+            <p>
+                Civil construction works and
+                construction material supply.
+            </p>
+
+            <span class="service-link">
+                View Service →
+            </span>
+
+        </div>
+
+
+        <!-- ELECTRICAL -->
+
+        <div class="service-card"
+             onclick="showPage('electrical')">
+
+            <span class="service-number">02</span>
+
+            <div class="service-icon">
+                ⚡
+            </div>
+
+            <h3>
+                Electrical Services
+            </h3>
+
+            <p>
+                Electrical installation and
+                technical solutions.
+            </p>
+
+            <span class="service-link">
+                View Service →
+            </span>
+
+        </div>
+
+
+        <!-- WATER TREATMENT -->
+
+        <div class="service-card"
+             onclick="showPage('water-treatment')">
+
+            <span class="service-number">03</span>
+
+            <div class="service-icon">
+                💧
+            </div>
+
+            <h3>
+                Water Treatment
+            </h3>
+
+            <p>
+                Industrial, hospital and
+                hemodialysis water treatment.
+            </p>
+
+            <span class="service-link">
+                View Service →
+            </span>
+
+        </div>
+
+
+        <!-- WATER SUPPLY -->
+
+        <div class="service-card"
+             onclick="showPage('water-supply')">
+
+            <span class="service-number">04</span>
+
+            <div class="service-icon">
+                🚰
+            </div>
+
+            <h3>
+                Water Supply
+            </h3>
+
+            <p>
+                Domestic, industrial and
+                hospital water supply systems.
+            </p>
+
+            <span class="service-link">
+                View Service →
+            </span>
+
+        </div>
+
+
+        <!-- FURNITURE -->
+
+        <div class="service-card"
+             onclick="showPage('furniture')">
+
+            <span class="service-number">05</span>
+
+            <div class="service-icon">
+                🪑
+            </div>
+
+            <h3>
+                Desk Furniture
+            </h3>
+
+            <p>
+                Professional furniture supply
+                for offices and institutions.
+            </p>
+
+            <span class="service-link">
+                View Service →
+            </span>
+
+        </div>
+
+
+        <!-- PLUMBING -->
+
+        <div class="service-card"
+             onclick="showPage('plumbing')">
+
+            <span class="service-number">06</span>
+
+            <div class="service-icon">
+                🔧
+            </div>
+
+            <h3>
+                Plumbing Services
+            </h3>
+
+            <p>
+                Plumbing installation, maintenance
+                and booster supply.
+            </p>
+
+            <span class="service-link">
+                View Service →
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- HOME CTA -->
+
+<section class="project-cta">
+
+    <div>
+
+        <p class="eyebrow">
+            PROJECT READY?
+        </p>
+
+        <h2>
+            Let's turn your requirements
+            into a working solution.
+        </h2>
+
+    </div>
+
+    <a href="#" class="btn btn-primary"
+       onclick="showPage('contact'); return false;">
+        Request a Quote
+    </a>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     CIVIL PAGE
+===================================================== -->
+
+<main id="civil" class="page">
+
+<section class="page-hero">
+
+    <div>
+
+        <p class="eyebrow">
+            ENGINEERING & CONSTRUCTION
+        </p>
+
+        <h1>
+            Civil Construction
+        </h1>
+
+        <p class="page-hero-description">
+            Reliable construction solutions and
+            construction material supply.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading center">
+
+        <p class="eyebrow">
+            OUR CAPABILITIES
+        </p>
+
+        <h2>
+            Civil Engineering Solutions
+        </h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature">
+
+            <span class="feature-number">
+                001
+            </span>
+
+            <h3>
+                🏗️ Construction Works
+            </h3>
+
+            <p>
+                Civil construction solutions for
+                residential, commercial and
+                institutional projects.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                002
+            </span>
+
+            <h3>
+                🧱 Construction Materials
+            </h3>
+
+            <p>
+                Supply of essential construction
+                materials for project requirements.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                003
+            </span>
+
+            <h3>
+                📐 Project Support
+            </h3>
+
+            <p>
+                Coordinated technical and supply
+                support for construction projects.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="service-cta">
+
+        <div>
+
+            <p class="eyebrow">
+                HAVE A REQUIREMENT?
+            </p>
+
+            <h2>
+                Tell us what your project needs.
+            </h2>
+
+        </div>
+
+        <a href="#" class="btn btn-primary"
+           onclick="showPage('contact'); return false;">
+            Send Enquiry
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     ELECTRICAL PAGE
+===================================================== -->
+
+<main id="electrical" class="page">
+
+<section class="page-hero">
+
+    <div>
+
+        <p class="eyebrow">
+            POWER & ELECTRICAL SYSTEMS
+        </p>
+
+        <h1>
+            Electrical Services
+        </h1>
+
+        <p class="page-hero-description">
+            Professional electrical solutions
+            for modern projects.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading center">
+
+        <p class="eyebrow">
+            OUR CAPABILITIES
+        </p>
+
+        <h2>
+            Electrical Solutions
+        </h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature">
+
+            <span class="feature-number">
+                001
+            </span>
+
+            <h3>
+                ⚡ Electrical Installation
+            </h3>
+
+            <p>
+                Electrical installation and technical
+                work for buildings, commercial spaces
+                and projects.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                002
+            </span>
+
+            <h3>
+                🔌 Electrical Systems
+            </h3>
+
+            <p>
+                Supply and support for electrical
+                equipment and systems.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                003
+            </span>
+
+            <h3>
+                🏢 Commercial Projects
+            </h3>
+
+            <p>
+                Electrical solutions for offices,
+                institutions and commercial buildings.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="service-cta">
+
+        <div>
+
+            <p class="eyebrow">
+                ELECTRICAL SUPPORT
+            </p>
+
+            <h2>
+                Looking for electrical solutions?
+            </h2>
+
+        </div>
+
+        <a href="#" class="btn btn-primary"
+           onclick="showPage('contact'); return false;">
+            Request Service
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     WATER TREATMENT PAGE
+===================================================== -->
+
+<main id="water-treatment" class="page">
+
+<section class="page-hero water">
+
+    <div>
+
+        <p class="eyebrow">
+            ADVANCED WATER TECHNOLOGY
+        </p>
+
+        <h1>
+            Water Treatment
+        </h1>
+
+        <p class="page-hero-description">
+            Modern water treatment solutions
+            for demanding environments.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading center">
+
+        <p class="eyebrow">
+            WATER TECHNOLOGY
+        </p>
+
+        <h2>
+            Complete Water Treatment Solutions
+        </h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                001
+            </span>
+
+            <h3>
+                💧 Water Treatment Plants
+            </h3>
+
+            <p>
+                Design, supply and project support
+                for water treatment applications.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                002
+            </span>
+
+            <h3>
+                🏥 Hospital Water Systems
+            </h3>
+
+            <p>
+                Water treatment solutions for
+                healthcare facilities.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                003
+            </span>
+
+            <h3>
+                ⚕ Hemodialysis Water Treatment
+            </h3>
+
+            <p>
+                Water treatment plant solutions
+                for hemodialysis applications.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                004
+            </span>
+
+            <h3>
+                🏭 Industrial Treatment
+            </h3>
+
+            <p>
+                Water treatment solutions for
+                industrial requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="service-cta">
+
+        <div>
+
+            <p class="eyebrow">
+                WATER TREATMENT PROJECT
+            </p>
+
+            <h2>
+                Need a specialized water solution?
+            </h2>
+
+        </div>
+
+        <a href="#" class="btn btn-primary"
+           onclick="showPage('contact'); return false;">
+            Discuss Project
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     WATER SUPPLY PAGE
+===================================================== -->
+
+<main id="water-supply" class="page">
+
+<section class="page-hero water">
+
+    <div>
+
+        <p class="eyebrow">
+            WATER INFRASTRUCTURE
+        </p>
+
+        <h1>
+            Water Supply Systems
+        </h1>
+
+        <p class="page-hero-description">
+            Domestic, industrial and hospital
+            water supply solutions.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading center">
+
+        <p class="eyebrow">
+            WATER SUPPLY
+        </p>
+
+        <h2>
+            Complete Water Infrastructure
+        </h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                001
+            </span>
+
+            <h3>
+                🏠 Domestic Water Supply
+            </h3>
+
+            <p>
+                Water supply systems for homes,
+                residential buildings and communities.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                002
+            </span>
+
+            <h3>
+                🏭 Industrial Water Supply
+            </h3>
+
+            <p>
+                Water infrastructure and supply
+                solutions for industrial environments.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                003
+            </span>
+
+            <h3>
+                🏥 Hospital Water Supply
+            </h3>
+
+            <p>
+                Water supply systems for hospitals
+                and healthcare facilities.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                004
+            </span>
+
+            <h3>
+                🚰 Complete Systems
+            </h3>
+
+            <p>
+                Integrated water supply solutions
+                from equipment supply to project support.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="service-cta">
+
+        <div>
+
+            <p class="eyebrow">
+                WATER INFRASTRUCTURE
+            </p>
+
+            <h2>
+                Plan your water supply system.
+            </h2>
+
+        </div>
+
+        <a href="#" class="btn btn-primary"
+           onclick="showPage('contact'); return false;">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FURNITURE PAGE
+===================================================== -->
+
+<main id="furniture" class="page">
+
+<section class="page-hero furniture">
+
+    <div>
+
+        <p class="eyebrow">
+            OFFICE & INSTITUTIONAL SOLUTIONS
+        </p>
+
+        <h1>
+            Desk Furniture Supply
+        </h1>
+
+        <p class="page-hero-description">
+            Functional furniture solutions for
+            professional environments.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading center">
+
+        <p class="eyebrow">
+            FURNITURE SUPPLY
+        </p>
+
+        <h2>
+            Professional Workspace Solutions
+        </h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                001
+            </span>
+
+            <h3>
+                🪑 Office Furniture
+            </h3>
+
+            <p>
+                Desk and furniture solutions for
+                offices and professional workplaces.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                002
+            </span>
+
+            <h3>
+                🏫 Institutional Furniture
+            </h3>
+
+            <p>
+                Furniture supply for schools,
+                institutions and commercial facilities.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                003
+            </span>
+
+            <h3>
+                💼 Workspace Solutions
+            </h3>
+
+            <p>
+                Practical furniture solutions
+                for modern workspaces.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="service-cta">
+
+        <div>
+
+            <p class="eyebrow">
+                FURNITURE REQUIREMENT
+            </p>
+
+            <h2>
+                Need furniture for your project?
+            </h2>
+
+        </div>
+
+        <a href="#" class="btn btn-primary"
+           onclick="showPage('contact'); return false;">
+            Request Quote
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     PLUMBING PAGE
+===================================================== -->
+
+<main id="plumbing" class="page">
+
+<section class="page-hero plumbing">
+
+    <div>
+
+        <p class="eyebrow">
+            PLUMBING • INSTALLATION • MAINTENANCE
+        </p>
+
+        <h1>
+            Professional Plumbing
+        </h1>
+
+        <p class="page-hero-description">
+            Reliable plumbing services and
+            equipment supply.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading center">
+
+        <p class="eyebrow">
+            PLUMBING SOLUTIONS
+        </p>
+
+        <h2>
+            Complete Plumbing Services
+        </h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                001
+            </span>
+
+            <h3>
+                🔧 Plumbing Installation
+            </h3>
+
+            <p>
+                Professional plumbing installation
+                for residential, commercial and
+                institutional projects.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                002
+            </span>
+
+            <h3>
+                🚿 Plumbing Maintenance
+            </h3>
+
+            <p>
+                Maintenance and support for
+                water and plumbing systems.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                003
+            </span>
+
+            <h3>
+                ⚙ Plumbing Booster Supply
+            </h3>
+
+            <p>
+                Supply of plumbing booster equipment
+                and related solutions.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <span class="feature-number">
+                004
+            </span>
+
+            <h3>
+                🏢 Project Plumbing
+            </h3>
+
+            <p>
+                Plumbing support for construction
+                and infrastructure projects.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="service-cta">
+
+        <div>
+
+            <p class="eyebrow">
+                PLUMBING SUPPORT
+            </p>
+
+            <h2>
+                Need professional plumbing support?
+            </h2>
+
+        </div>
+
+        <a href="#" class="btn btn-primary"
+           onclick="showPage('contact'); return false;">
+            Request Service
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     CONTACT PAGE
+===================================================== -->
+
+<main id="contact" class="page">
+
+<section class="page-hero">
+
+    <div>
+
+        <p class="eyebrow">
+            GET IN TOUCH
+        </p>
+
+        <h1>
+            Let's discuss your project.
+        </h1>
+
+        <p class="page-hero-description">
+            Tell us what you need and we'll help
+            you choose the right service.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="contact-grid">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <p class="eyebrow">
+                CONTACT ALL TRADERS
+            </p>
+
+            <h2>
+                Your project starts
+                with a conversation.
+            </h2>
+
+            <p class="contact-info-description">
+                For construction, electrical,
+                water treatment, water supply,
+                furniture or plumbing requirements,
+                contact us directly.
+            </p>
+
+
+            <div class="contact-item">
+
+                <small>
+                    PHONE
+                </small>
+
+                <a href="tel:9851248460">
+                    9851248460
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <small>
+                    EMAIL
+                </small>
+
+                <a href="mailto:alltraderktm@gmail.com">
+                    alltraderktm@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <small>
+                    BUSINESS
+                </small>
+
+                <strong>
+                    ALL TRADERS
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <form class="contact-form"
+              onsubmit="sendEmail(event)">
+
+            <h3>
+                Project Enquiry
+            </h3>
+
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Contact Number"
+                required
+            >
+
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+            >
+
+
+            <select id="service" required>
+
+                <option value="">
+                    Select a Service
+                </option>
+
+                <option>
+                    Civil Construction
+                </option>
+
+                <option>
+                    Electrical Services
+                </option>
+
+                <option>
+                    Water Treatment
+                </option>
+
+                <option>
+                    Water Supply
+                </option>
+
+                <option>
+                    Desk Furniture
+                </option>
+
+                <option>
+                    Plumbing Services
+                </option>
+
+            </select>
+
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Describe your requirement..."
+                required
+            ></textarea>
+
+
+            <button
+                class="btn btn-primary"
+                type="submit">
+
+                Send Enquiry →
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+    <div>
+
+        <h2>
+            ALL TRADERS
+        </h2>
+
+        <p>
+            Engineering, construction,
+            water treatment and professional
+            supply solutions.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h3>
+            Services
+        </h3>
+
+        <a href="#" onclick="showPage('civil'); return false;">
+            Civil Construction
+        </a>
+
+        <a href="#" onclick="showPage('electrical'); return false;">
+            Electrical
+        </a>
+
+        <a href="#" onclick="showPage('water-treatment'); return false;">
+            Water Treatment
+        </a>
+
+        <a href="#" onclick="showPage('plumbing'); return false;">
+            Plumbing
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h3>
+            Contact
+        </h3>
+
+        <a href="tel:9851247460">
+            📞 9851247460
+        </a>
+
+        <a href="mailto:alltraderktm@gmail.com">
+            ✉ alltraderktm@gmail.com
+        </a>
+
+    </div>
+
+
+</div>
+
+
+<div class="copyright">
+
+    © 2026 ALL TRADERS.
+    All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+
+<script>
+
+/* =========================================================
+   PAGE NAVIGATION
+========================================================= */
+
+function showPage(pageId) {
+
+    /* Hide all pages */
+
+    document.querySelectorAll(".page").forEach(function(page) {
+
+        page.classList.remove("active-page");
+
+    });
+
+
+    /* Show selected page */
+
+    const page = document.getElementById(pageId);
+
+    if (page) {
+
+        page.classList.add("active-page");
+
+    }
+
+
+    /* Update active navigation */
+
+    document.querySelectorAll(".nav-menu a").forEach(function(link) {
+
+        link.classList.remove("active");
+
+    });
+
+
+    /* Close mobile menu */
+
+    document.getElementById("navMenu").classList.remove("show");
+
+
+    /* Scroll to top */
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function toggleMenu() {
+
+    document
+        .getElementById("navMenu")
+        .classList.toggle("show");
+
+}
+
+
+/* =========================================================
+   EMAIL ENQUIRY
+========================================================= */
+
+function sendEmail(event) {
+
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const email =
+        document.getElementById("email").value;
+
+    const service =
+        document.getElementById("service").value;
+
+    const message =
+        document.getElementById("message").value;
+
+
+    const subject =
+        "ALL TRADERS Service Enquiry - " +
+        service;
+
+
+    const body =
+        "Name: " + name +
+        "\nPhone: " + phone +
+        "\nEmail: " + email +
+        "\nService: " + service +
+        "\n\nProject Details:\n" +
+        message;
+
+
+    window.location.href =
+        "mailto:alltraderktm@gmail.com" +
+        "?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+
+}
+
+
+/* =========================================================
+   SERVICES LINK
+========================================================= */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        const target =
+            event.target.closest(
+                'a[href="#services"]'
+            );
+
+        if (target) {
+
+            const home =
+                document.getElementById("home");
+
+            if (!home.classList.contains("active-page")) {
+
+                showPage("home");
+
+                setTimeout(function() {
+
+                    document
+                        .getElementById("services")
+                        .scrollIntoView({
+                            behavior: "smooth"
+                        });
+
+                }, 100);
+
+            }
+
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
